@@ -31,42 +31,42 @@ const gatewayChips = [
 
 const components = [
   {
-    num: "/ 01",
+    num: "01",
     title: "API interception layer",
     body: "Transparently intercepts outbound and inbound API calls — including POST, PUT, and PATCH — and applies protection without blocking application flow. Selection is policy-driven, so unprotected endpoints pass through cleanly.",
   },
   {
-    num: "/ 02",
+    num: "02",
     title: "Endpoint SDK / middleware",
     body: "A lightweight library for Node.js, Python, and Java, or a sidecar/gateway proxy. Embeds at the boundary and operates without modifying the host application.",
   },
   {
-    num: "/ 03",
+    num: "03",
     title: "Post-quantum authentication",
     body: "Binds authenticity and integrity to every request with ML-DSA (Dilithium) digital signatures, so tampered or forged requests are rejected before processing.",
   },
   {
-    num: "/ 04",
+    num: "04",
     title: "Post-quantum key establishment",
     body: "Establishes session secrets with ML-KEM (Kyber) key encapsulation, with ephemeral keys held only in volatile memory and destroyed at session end.",
   },
   {
-    num: "/ 05",
+    num: "05",
     title: "Payload integrity verification",
     body: "Authenticated encryption (ChaCha20-Poly1305 / AES-256-GCM) protects the payload itself, detecting any modification in transit — not just on the transport hop.",
   },
   {
-    num: "/ 06",
+    num: "06",
     title: "Verification engine",
     body: "Server-side middleware decrypts, verifies signatures, checks replay protections, and forwards clean plaintext to backend logic — or rejects and logs the request.",
   },
   {
-    num: "/ 07",
+    num: "07",
     title: "Policy engine",
     body: "Centralized control over enabled algorithms, protected domains, threat responses, and audit destinations — distributed across the estate as data, not code.",
   },
   {
-    num: "/ 08",
+    num: "08",
     title: "Audit framework",
     body: "Generates a tamper-evident record for every protected request — timestamp, source, algorithm, verification result, and threat outcome — for regulatory evidence.",
   },
@@ -196,47 +196,108 @@ export default function ProductHero() {
     </div>
  
     <Section className="relative overflow-hidden bg-white">
-        
-        {/* <Wrap className="relative"> */}
           <div className="flex flex-col items-center text-center mb-2">
             <ArchDiagram nodes={productArchNodes} chips={gatewayChips} spaced />
           </div>
-        {/* </Wrap> */}
+       
       </Section>
 
       {/* ── Section 2: Platform components ── */}
-      <Section className="bg-white">
-        <Wrap>
-          <div className="flex flex-col items-center text-center mb-10">
-            <span className="inline-flex items-center gap-[7px] text-[11px] font-semibold uppercase tracking-[.1em] text-indigo-500 bg-indigo-50 border border-indigo-100 rounded-full px-4 py-[5px] mb-5">
-              <span className="w-[5px] h-[5px] rounded-full bg-indigo-500" />
-              Platform components
-            </span>
-            <h2 className="text-[34px] max-[860px]:text-[27px] font-bold text-gray-950 max-w-[760px] leading-snug">
-              Eight components, one cohesive layer.
-            </h2>
-          </div>
+  <Section className="bg-white relative overflow-hidden">
+  {/* ambient gradient wash, built from your two theme colors */}
+  <div
+    className="absolute -top-[200px] -right-[200px] w-[600px] h-[600px] rounded-full blur-[120px] opacity-60 pointer-events-none"
+    style={{
+      background:
+        "radial-gradient(circle, rgba(186,230,253,0.9) 0%, rgba(99,102,241,0.42) 55%, transparent 75%)",
+    }}
+  />
+  <div
+    className="absolute -bottom-[160px] -left-[160px] w-[420px] h-[420px] rounded-full blur-[110px] opacity-40 pointer-events-none"
+    style={{
+      background:
+        "radial-gradient(circle, rgba(99,102,241,0.42) 0%, transparent 70%)",
+    }}
+  />
 
-          <div className="mt-2 grid grid-cols-2 gap-4 max-[860px]:grid-cols-1">
-            {components.map((c) => (
-              <div
-                key={c.num}
-                className="bg-white border border-[#eaeaf2] rounded-2xl p-7 hover:border-indigo-200 hover:shadow-[0_2px_20px_rgba(99,102,241,.07)] transition-all"
-              >
-                <div className="font-mono text-[11px] font-bold tracking-[.1em] text-[#dedee8] mb-4">
-                  {c.num}
-                </div>
-                <h3 className="text-[15px] font-bold text-gray-950 mb-2 leading-snug">
-                  {c.title}
-                </h3>
-                <p className="text-[13px] text-slate-500 leading-[1.65]">
-                  {c.body}
-                </p>
-              </div>
-            ))}
+  <Wrap className="relative">
+    <div className="flex flex-col items-center text-center mb-16">
+      <span
+        className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[.16em] text-white rounded-full px-4 py-[6px] mb-6 shadow-sm"
+        style={{
+          background:
+            "linear-gradient(135deg, rgba(99,102,241,1) 0%, rgba(99,102,241,0.75) 100%)",
+        }}
+      >
+        Platform components
+      </span>
+      <h2 className="text-[36px] max-[860px]:text-[27px] font-extrabold text-gray-950 max-w-[760px] leading-[1.15] tracking-tight">
+        Eight components,{" "}
+        <span
+          className="bg-clip-text text-transparent"
+          style={{
+            backgroundImage:
+              "linear-gradient(90deg, rgba(99,102,241,1), rgba(56,131,217,1))",
+          }}
+        >
+          one cohesive layer
+        </span>
+        .
+      </h2>
+    </div>
+
+    <div className="grid grid-cols-2 gap-6 max-[860px]:grid-cols-1">
+      {components.map((c) => (
+        <div
+          key={c.num}
+          className="group relative rounded-[20px] p-[1px] transition-transform duration-300 hover:-translate-y-1"
+          style={{
+            background:
+              "linear-gradient(135deg, rgba(99,102,241,0.42), rgba(186,230,253,0.9))",
+          }}
+        >
+          <div
+            className="relative h-full rounded-[19px] bg-white p-7 overflow-hidden"
+          >
+            {/* corner glow, intensifies on hover */}
+            <div
+              className="absolute -top-10 -right-10 w-[140px] h-[140px] rounded-full blur-2xl opacity-0 group-hover:opacity-70 transition-opacity duration-300 pointer-events-none"
+              style={{
+                background:
+                  "radial-gradient(circle, rgba(186,230,253,0.9), rgba(99,102,241,0.42))",
+              }}
+            />
+
+            <div
+              className="relative w-11 h-11 rounded-full flex items-center justify-center mb-5 font-mono text-[12px] font-bold text-white shadow-md"
+              style={{
+                background:
+                  "linear-gradient(135deg, rgba(99,102,241,1), rgba(56,131,217,1))",
+              }}
+            >
+              {c.num}
+            </div>
+
+            <h3 className="relative text-[17px] font-bold text-gray-950 mb-2.5 leading-snug">
+              {c.title}
+            </h3>
+            <p className="relative text-[13.5px] text-slate-500 leading-[1.7]">
+              {c.body}
+            </p>
+
+            <div
+              className="absolute bottom-0 left-7 right-7 h-px scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"
+              style={{
+                background:
+                  "linear-gradient(90deg, rgba(99,102,241,0.6), rgba(186,230,253,0.9))",
+              }}
+            />
           </div>
-        </Wrap>
-      </Section>
+        </div>
+      ))}
+    </div>
+  </Wrap>
+</Section>
 
       {/* ── Section 3: Integration + CTA ── */}
       <Section className="bg-white">
