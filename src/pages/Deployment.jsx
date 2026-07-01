@@ -135,7 +135,9 @@ export default function Deployment() {
 
         <Wrap className="relative z-10">
           <div className="mb-14 flex flex-col items-center text-center">
-            <Eyebrow>Deployment</Eyebrow>
+             <span className="font-mono text-[11px] tracking-[0.22em] uppercase text-indigo-500">
+              Deployment
+            </span>
             <h2 className="mt-3.5 max-w-[760px] text-[34px] font-bold text-slate-900 max-[860px]:text-[27px]">
               Runs where your{" "}
               <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(135deg,#6366f1,#a5b4fc,#7dd3fc)", backgroundSize: "200% auto", animation: "shimmer 3s linear infinite" }}>
@@ -226,7 +228,9 @@ export default function Deployment() {
 
         <Wrap className="relative z-10">
           <div className="mb-12 flex flex-col items-center text-center">
-            <Eyebrow>The path to production</Eyebrow>
+            <span className="font-mono text-[11px] tracking-[0.22em] uppercase text-indigo-500">
+             The path to production
+            </span>
             <h2 className="mt-3.5 max-w-[760px] text-[34px] font-bold text-slate-900 max-[860px]:text-[27px]">
               A measured rollout, not a{" "}
               <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(135deg,#6366f1,#a5b4fc,#7dd3fc)", backgroundSize: "200% auto", animation: "shimmer 3s linear infinite" }}>

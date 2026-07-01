@@ -19,15 +19,9 @@ export default function UseCases() {
             </span>
             <h2 className="mt-3.5 max-w-[760px] text-[34px] text-slate-900 max-[860px]:text-[27px]">
               Built for the{" "}
-              <span
-                className="bg-clip-text text-transparent"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(135deg, rgba(41, 43, 145, 0.42), rgba(67, 173, 230, 0.9))",
-                }}
-              >
+               <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(135deg,#6366f1,#a5b4fc,#7dd3fc)", backgroundSize: "200% auto", animation: "shimmer 3s linear infinite" }}>
                 infrastructure
-              </span>{" "}
+               </span>{" "}
               the economy depends on.
             </h2>
             <p className="mt-4.5 max-w-[680px] text-lg text-muted">

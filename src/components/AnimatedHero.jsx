@@ -326,7 +326,17 @@ export default function AnimatedHero() {
           Quantum-resilient protection
           <br />
           for the APIs your business{" "}
-          <span style={styles.gradient}>runs on.</span>
+           <span
+  className="inline-block bg-clip-text text-transparent"
+  style={{
+    backgroundImage:
+      "linear-gradient(135deg,#6366f1,#a5b4fc,#7dd3fc,#6366f1)",
+    backgroundSize: "200% 100%",
+    animation: "shimmer 3s linear infinite",
+  }}
+>
+  runs on.
+</span>{" "}
         </h1>
 
         {/* Sub-copy */}

@@ -515,19 +515,20 @@ export default function ProductHero() {
           style={{ background: "radial-gradient(circle,rgba(99,102,241,0.35) 0%,rgba(99,102,241,0.08) 45%,transparent 70%)" }} />
         <div className="pointer-events-none absolute -bottom-20 -right-20 w-[300px] h-[300px] rounded-full"
           style={{ background: "radial-gradient(circle,rgba(186,230,253,0.28) 0%,rgba(186,230,253,0.06) 45%,transparent 70%)" }} />
-
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-6">
-          <span className="mb-[18px] inline-flex items-center gap-[6px] rounded-full border border-indigo-500/30 bg-indigo-500/15 px-4 py-[5px] text-[11px] font-semibold uppercase tracking-widest text-indigo-300">
-            <span className="h-[5px] w-[5px] rounded-full bg-indigo-400" />
+        <div className="mb-14 flex flex-col items-center text-center">
+             <span className="mb-[18px] inline-flex items-center gap-[6px] rounded-full border border-indigo-500/30 bg-indigo-500/15 px-4 py-[5px] text-[11px] font-semibold uppercase tracking-widest text-indigo-300">
             The platform
           </span>
-          <h1 className="text-[32px] max-[860px]:text-[24px] font-bold text-white max-w-[660px] leading-snug mb-3">
-            QuantZen™ — quantum-safe middleware<br className="hidden sm:block" /> for API communication.
-          </h1>
-          <p className="text-[14px] text-slate-400 max-w-[520px] leading-[1.7]">
-            A modular security layer that intercepts API traffic, applies post-quantum cryptography, and records an immutable audit trail — without changing the systems it protects.
-          </p>
-        </div>
+            <h2 className="mt-3.5 max-w-[760px] text-[34px] font-bold text-white max-[860px]:text-[27px] mt-4">
+              <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(135deg,#6366f1,#a5b4fc,#7dd3fc)", backgroundSize: "200% auto", animation: "shimmer 3s linear infinite" }}>
+                  QuantZen™{" "}
+              </span>{" "}
+              — quantum-safe middleware<br className="hidden sm:block" /> for API communication.
+            </h2>
+            <p className="mt-4.5 max-w-[620px] text-lg leading-relaxed text-gray-500">
+              A modular security layer that intercepts API traffic, applies post-quantum cryptography, and records an immutable audit trail — without changing the systems it protects.
+            </p>
+          </div>
       </div>
 
       {/* dark hero → white section: the only real color-jump boundary on this page */}
@@ -560,28 +561,15 @@ export default function ProductHero() {
         />
 
         <Wrap className="relative">
-          <div className="flex flex-col items-center text-center mb-16">
-            <span
-              className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[.16em] text-white rounded-full px-4 py-[6px] mb-6 shadow-sm"
-              style={{
-                background:
-                  "linear-gradient(135deg, rgba(99,102,241,1) 0%, rgba(99,102,241,0.75) 100%)",
-              }}
-            >
+          <div className="mb-14 flex flex-col items-center text-center">
+             <span className="font-mono text-[11px] tracking-[0.22em] uppercase text-indigo-500">
               Platform components
             </span>
-            <h2 className="text-[36px] max-[860px]:text-[27px] font-extrabold text-gray-950 max-w-[760px] leading-[1.15] tracking-tight">
-              Eight components,{" "}
-              <span
-                className="bg-clip-text text-transparent"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(90deg, rgba(99,102,241,1), rgba(56,131,217,1))",
-                }}
-              >
-                one cohesive layer
-              </span>
-              .
+            <h2 className="mt-3.5 max-w-[760px] text-[34px] font-bold text-slate-900 max-[860px]:text-[27px]">
+              <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(135deg,#6366f1,#a5b4fc,#7dd3fc)", backgroundSize: "200% auto", animation: "shimmer 3s linear infinite" }}>
+                  Eight components,{" "}
+              </span>{" "}
+                    one cohesive layer{" "}
             </h2>
           </div>
 
@@ -641,15 +629,18 @@ export default function ProductHero() {
       {/* ── Section 3: Integration + CTA ── */}
       <Section className="bg-white">
         <Wrap>
-          <div className="flex flex-col items-center text-center mb-10">
-            <span className="inline-flex items-center gap-[7px] text-[11px] font-semibold uppercase tracking-[.1em] text-indigo-500 bg-indigo-50 border border-indigo-100 rounded-full px-4 py-[5px] mb-5">
-              <span className="w-[5px] h-[5px] rounded-full bg-indigo-500" />
+          <div className="mb-14 flex flex-col items-center text-center">
+             <span className="font-mono text-[11px] tracking-[0.22em] uppercase text-indigo-500">
               Integration
             </span>
-            <h2 className="text-[34px] max-[860px]:text-[27px] font-bold text-gray-950 max-w-[760px] leading-snug">
-              Built to sit beside your stack, not inside it.
+            <h2 className="mt-3.5 max-w-[760px] text-[34px] font-bold text-slate-900 max-[860px]:text-[27px]">
+              Built to sit beside your{" "}
+              <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(135deg,#6366f1,#a5b4fc,#7dd3fc)", backgroundSize: "200% auto", animation: "shimmer 3s linear infinite" }}>
+                 Stack
+              </span>{" "}
+                    not inside it.{" "}
             </h2>
-            <p className="mt-4 max-w-[680px] text-lg text-slate-500 leading-relaxed">
+            <p className="mt-4.5 max-w-[620px] text-lg leading-relaxed text-gray-500">
               QuantZen integrates with the API gateways and infrastructure you
               already operate. It runs as a stateless layer at the boundary, so
               traffic continues to flow through your existing gateway to

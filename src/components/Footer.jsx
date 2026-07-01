@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Wrap from "./Wrap";
-
+import AtomDivider from "./AtomDivider";
 function XIcon(props) {
   return (
     <svg
@@ -33,6 +33,7 @@ export default function Footer() {
   return (
     <footer className="bg-white pb-10 pt-[54px]">
       <Wrap>
+         <AtomDivider from="#ffffff" to="#ffffff" />
         <div className="flex flex-wrap items-start justify-between gap-7.5">
           <div>
             <div className="flex items-center gap-[11px] cursor-pointer font-disp text-[19px] font-semibold tracking-[-0.01em] text-slate-900">

@@ -380,14 +380,9 @@ const [openIndex, setOpenIndex] = useState(null);
       <SectionLabel>The model</SectionLabel>
       <h2 className="max-w-[760px] text-[34px] max-[860px]:text-[27px] font-bold text-gray-950 leading-snug">
         Why{" "}
-        <span
-          className="bg-clip-text text-transparent"
-          style={{
-            backgroundImage: `linear-gradient(90deg, ${INDIGO_SOLID}, ${SKY_SOLID})`,
-          }}
-        >
-          post-quantum
-        </span>
+        <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(135deg,#6366f1,#a5b4fc,#7dd3fc)", backgroundSize: "200% auto", animation: "shimmer 3s linear infinite" }}>
+                post-quantum
+        </span>{" "}
         , and why at the payload.
       </h2>
       <p className="mt-4.5 max-w-[680px] text-lg text-slate-500 leading-relaxed">
@@ -464,7 +459,11 @@ const [openIndex, setOpenIndex] = useState(null);
     <div className="flex flex-col items-center text-center mb-12">
       <SectionLabel>Protections</SectionLabel>
       <h2 className="max-w-[760px] text-[34px] max-[860px]:text-[27px] font-bold text-gray-950 leading-snug">
-        What every protected request carries.
+        What every{" "}
+        <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(135deg,#6366f1,#a5b4fc,#7dd3fc)", backgroundSize: "200% auto", animation: "shimmer 3s linear infinite" }}>
+                protected
+        </span>{" "}
+        request carries.
       </h2>
     </div>
 
@@ -521,8 +520,12 @@ const [openIndex, setOpenIndex] = useState(null);
           <div className="flex flex-col items-center text-center mb-12">
             <SectionLabel>Attack scenario</SectionLabel>
             <h2 className="max-w-[760px] text-[34px] max-[860px]:text-[27px] font-bold text-gray-950 leading-snug">
-              An intercepted, tampered API request — stopped.
-            </h2>
+        An intercepted, tampered{" "}
+        <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(135deg,#6366f1,#a5b4fc,#7dd3fc)", backgroundSize: "200% auto", animation: "shimmer 3s linear infinite" }}>
+                API 
+        </span>{" "}
+        request — stopped.
+      </h2>
             <p className="mt-4.5 max-w-[680px] text-lg text-slate-500 leading-relaxed">
               A funds-transfer request leaves a banking app. An attacker on the
               path attempts to alter the destination account. Here is what

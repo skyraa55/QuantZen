@@ -70,17 +70,17 @@ export default function Home() {
           }}
         />
         <Wrap className="relative">
-          <div className="mx-auto max-w-[700px] text-center">
-            <span className="font-mono text-[11px] tracking-[0.22em] uppercase text-indigo-500">
+          <div className="mb-14 flex flex-col items-center text-center">
+             <span className="font-mono text-[11px] tracking-[0.22em] uppercase text-indigo-500">
               The quantum clock is already running
             </span>
-            <h2
-              className="mt-3.5 text-[30px] max-[860px]:text-[24px]"
-              style={{ color: "#16181d" }}
-            >
-              Encrypted today. Exposed tomorrow.
+            <h2 className="mt-3.5 max-w-[760px] text-[34px] font-bold text-slate-900 max-[860px]:text-[27px]">
+              <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(135deg,#6366f1,#a5b4fc,#7dd3fc)", backgroundSize: "200% auto", animation: "shimmer 3s linear infinite" }}>
+                 Encrypted
+              </span>{" "}
+                    today. Exposed tomorrow.{" "}
             </h2>
-            <p className="mt-4 text-base text-slate-600">
+            <p className="mt-4.5 max-w-[620px] text-lg leading-relaxed text-gray-500">
               The cryptography protecting your APIs — RSA and elliptic-curve —
               was never designed to withstand a quantum computer. A
               sufficiently capable machine running Shor&rsquo;s algorithm
@@ -114,35 +114,24 @@ export default function Home() {
        <AtomDivider from="#ffffff" to="#ffffff" />
       <section className="relative overflow-hidden bg-white">
       <div className="relative mx-auto max-w-[700px] px-6 py-20">
-        <div className="mx-auto max-w-[700px] text-center">
-          <span
-            className="inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-[11px] font-medium tracking-[0.18em] uppercase"
-            style={{
-              background: "rgba(186,230,253,0.55)",
-              border: "1px solid rgba(99,102,241,0.25)",
-              color: "#4338ca",
-            }}
-          >
-            <span className="inline-block h-1.5 w-1.5 rounded-full" style={{ background: "rgba(99,102,241,0.8)" }} />
-            What QuantZen does
-          </span>
-
-          <h2
-            className="mt-5 text-[30px] font-medium leading-snug tracking-tight max-[860px]:text-[24px]"
-            style={{ color: "#16181d" }}
-          >
-            A security layer that wraps<br className="hidden sm:block" /> what you already run.
-          </h2>
-
-        
-
-          <p className="text-base leading-relaxed text-zinc-500">
-            QuantZen™ sits at your API boundary and protects requests and
+        <div className="mb-14 flex flex-col items-center text-center">
+             <span className="font-mono text-[11px] tracking-[0.22em] uppercase text-indigo-500">
+              What QuantZen does
+            </span>
+            <h2 className="mt-3.5 max-w-[760px] text-[34px] font-bold text-slate-900 max-[860px]:text-[27px]">
+              A{" "}
+              <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(135deg,#6366f1,#a5b4fc,#7dd3fc)", backgroundSize: "200% auto", animation: "shimmer 3s linear infinite" }}>
+                 security
+              </span>{" "}
+              layer that wraps<br className="hidden sm:block" /> what you already run.
+            </h2>
+            <p className="mt-4.5 max-w-[620px] text-lg leading-relaxed text-gray-500">
+               QuantZen™ sits at your API boundary and protects requests and
             responses with post-quantum cryptography in flight. Your
             applications, API gateways, and backend systems stay exactly as
             they are.
-          </p>
-        </div>
+            </p>
+          </div>
 
         <ArchDiagram nodes={homeArchNodes} />
       </div>
@@ -151,17 +140,17 @@ export default function Home() {
 
      <Section className="bg-white">
   <Wrap>
-
-    {/* Header */}
-    <div className="flex flex-col items-center text-center mb-[52px]">
-      <span className="inline-flex items-center gap-[7px] text-[11px] font-semibold uppercase tracking-[.1em] text-indigo-500 bg-indigo-50 border border-indigo-100 rounded-full px-4 py-[5px] mb-[18px]">
-        <span className="w-[5px] h-[5px] rounded-full bg-indigo-500" />
-        Why teams choose QuantZen
-      </span>
-      <h2 className="text-[33px] font-bold text-gray-950 leading-snug max-w-[540px]">
-        Post-quantum security, without the rebuild.
-      </h2>
-    </div>
+    <div className="mb-14 flex flex-col items-center text-center">
+             <span className="font-mono text-[11px] tracking-[0.22em] uppercase text-indigo-500">
+               Why teams choose QuantZen
+            </span>
+            <h2 className="mt-3.5 max-w-[760px] text-[34px] font-bold text-slate-900 max-[860px]:text-[27px]">
+              <span className="bg-clip-text text-transparent" style={{ backgroundImage: "linear-gradient(135deg,#6366f1,#a5b4fc,#7dd3fc)", backgroundSize: "200% auto", animation: "shimmer 3s linear infinite" }}>
+                 Post-quantum 
+              </span>{" "}
+              security, without the rebuild.{" "}
+            </h2>
+          </div>
 
     {/* Cards */}
     <div className="grid grid-cols-3 max-[860px]:grid-cols-1 gap-4 mb-5">
@@ -182,7 +171,6 @@ export default function Home() {
 
   </Wrap>
 </Section>
- <AtomDivider from="#ffffff" to="#ffffff" />
     </>
   );
 }
