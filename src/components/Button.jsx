@@ -10,11 +10,6 @@ const variants = {
     "border-line2 bg-transparent text-text hover:border-blue hover:text-blue",
 };
 
-/**
- * Shared button/link control matching `.btn.primary` / `.btn.ghost` styles.
- * Renders a router <Link> when `to` is given, otherwise a clickable <span>
- * that fires `onClick` (mirrors the original onclick-driven buttons).
- */
 export default function Button({
   to,
   onClick,

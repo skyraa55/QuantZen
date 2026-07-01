@@ -129,9 +129,6 @@ export default function About() {
                 .
               </h2>
             </div>
-
-            {/* Discipline list, tagged like protocol codes rather than numbered steps —
-                these four areas run in parallel, not in sequence. */}
             <div className="mx-auto mt-10 max-w-[820px] border-t border-slate-200">
               {disciplines.map((d) => (
                 <div

@@ -6,11 +6,7 @@ const snVariants = {
     "border border-teal/35 bg-teal/[0.12] font-mono text-[13px] font-medium text-teal",
 };
 
-/**
- * One step in the "attack scenario" walkthrough on the Security page.
- * `kind` is "neutral" | "threat" | "block" and controls the badge color
- * and the optional verdict line styling.
- */
+
 export default function AttackScenarioStep({
   number,
   kind = "neutral",

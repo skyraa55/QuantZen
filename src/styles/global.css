@@ -1,10 +1,6 @@
 @import "tailwindcss";
 
-/*
- * Design tokens — mirrors the original CSS custom properties so every
- * Tailwind utility (bg-ink, text-blue, font-disp, etc.) maps back to the
- * exact same values the hand-written CSS used.
- */
+
 @theme {
   --color-ink: #080B16;
   --color-ink2: #0B1020;
@@ -77,8 +73,6 @@
 }
 
 @layer components {
-  /* Brand mark — the rotated half-ring inside the logo square.
-     Kept as raw CSS because it relies on a ::after pseudo-element. */
   .qmark::after {
     content: "";
     position: absolute;
@@ -90,8 +84,6 @@
     transform: rotate(45deg);
   }
 
-  /* Eyebrow label — the short rule before the uppercase text,
-     kept as raw CSS because it relies on a ::before pseudo-element. */
 .eyebrow::before {
   content: "";
   width: 18px;

@@ -127,8 +127,6 @@ export default function Deployment() {
   return (
     <>
       <PageMeta title="Deployment" />
-
-      {/* ── Section 1: Deployment Models ── */}
       <Section className="relative overflow-hidden bg-white">
         <div className="pointer-events-none absolute -right-24 -top-24 h-[420px] w-[420px] rounded-full opacity-50" style={{ background: "radial-gradient(circle,rgba(196,181,253,.55),transparent 70%)", filter: "blur(72px)", animation: "blobPulse 7s ease-in-out infinite" }}/>
         <div className="pointer-events-none absolute -left-20 bottom-0 h-[300px] w-[300px] rounded-full opacity-40" style={{ background: "radial-gradient(circle,rgba(186,230,253,.55),transparent 70%)", filter: "blur(64px)", animation: "blobPulse 7s ease-in-out 3.5s infinite" }}/>

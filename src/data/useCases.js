@@ -1,5 +1,3 @@
-// Data for the "Use Cases" page — each entry renders as a card with
-// title, tag, problem, why-it-matters, and how-QuantZen-helps copy.
 export const useCases = [
   {
     title: "Banking & Financial Services",
